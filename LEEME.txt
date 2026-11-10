@@ -1,0 +1,48 @@
+PIXELCRAFTFX — PAQUETE CORREGIDO PARA GITHUB PAGES
+====================================================
+
+LO QUE CORREGÍ
+- Recuperé la página principal en index.html.
+- trabajos.html ahora es la galería independiente.
+- AMBOS HTML cargan el MISMO archivo style.css (sin S).
+- Se incluye favicon.svg Y favicon.ico para mayor compatibilidad.
+- Añadí ?v=5 en CSS y favicon para evitar la caché antigua.
+- Los botones de Mis trabajos llevan a trabajos.html.
+- Los enlaces Volver al inicio llevan a index.html.
+- Animaciones discretas en inicio y galería; respeto a movimiento reducido.
+- Solo está activa la sección Videos editados. Las de largos y cortos
+  permanecen como comentarios HTML, invisibles.
+
+CÓMO REEMPLAZAR LOS ARCHIVOS
+1. Entra a https://github.com/pixelcraftfx/pixelcraftfx.github.io
+2. Pulsa Add file > Upload files.
+3. Selecciona y sube estos CINCO archivos A LA RAÍZ:
+   index.html, trabajos.html, style.css, favicon.svg, favicon.ico
+4. Si GitHub pregunta, confirma el reemplazo de los existentes.
+5. Pulsa Commit changes.
+6. Espera que GitHub Pages termine de publicar (Settings > Pages, o Actions).
+7. Abre https://pixelcraftfx.github.io/ y luego
+   https://pixelcraftfx.github.io/trabajos.html
+8. Si ves una versión anterior, recarga con Ctrl+F5 o en incógnito.
+
+IMPORTANTE
+- NO borres las imágenes que ya subiste:
+    Perfil.webp
+    mis trabajos.webp
+- Deben estar en la misma carpeta raíz que los HTML.
+- El viejo archivo styles.css (con S) no se usa. Si existe en GitHub,
+  puedes eliminarlo después. No afecta aunque se quede allí.
+- NO vuelvas a pegar trabajos.html dentro de index.html.
+- No se requiere ningún editor externo ni instalar bibliotecas.
+
+AGREGAR VIDEOS
+Abre trabajos.html en GitHub y busca:
+    INICIO TARJETA DE VIDEO: DUPLICA DESDE AQUÍ
+Copia desde <article class="video-card work-video-item"> hasta el
+</article> correspondiente y pégalo justo debajo, dentro de
+<div class="work-video-list">. Cambia el título, descripción y miniatura.
+En el mismo HTML tienes instrucciones comentadas para usar enlaces a YouTube.
+
+SECCIONES OCULTAS
+Videos largos y Videos cortos están comentadas en trabajos.html,
+por lo tanto no aparecen en la página hasta que quieras activarlas.
